@@ -1,11 +1,5 @@
 using { sap.fe.cap.travel as schema } from '../db/schema';
-using {
-  sap.fe.cap.travel.Airline,
-  sap.fe.cap.travel.Passenger,
-  sap.fe.cap.travel.TravelAgency,
-  sap.fe.cap.travel.Supplement,
-  sap.fe.cap.travel.Flight
- } from './master-data';
+
 //
 // annotations that control rendering of fields and labels
 //
@@ -73,7 +67,6 @@ annotate schema.BookingSupplement {
         message: 'Default Message',
         handler: 'srv/handlers/ConditionalMandatoryCheck.js'
     }
-    @mandatory
 Price;
      @validation: {
         message: 'Default Message',
