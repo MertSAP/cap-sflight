@@ -73,6 +73,7 @@ annotate schema.BookingSupplement {
         message: 'Default Message',
         handler: 'srv/handlers/ConditionalMandatoryCheck.js'
     }
+    @mandatory
 Price;
      @validation: {
         message: 'Default Message',
